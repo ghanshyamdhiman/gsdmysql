@@ -10,12 +10,12 @@
 import mysql.connector
 
 #rm_host = '0.0.0.0'
-rm_host = '192.168.0.12'
+rm_host = '192.168.0.11'
 
 mydb = mysql.connector.connect(
   host=rm_host,
-  user="root",
-  password="root123",
+  user="gsd",
+  password="gsd123",
   database="testdb1"
 )
 
