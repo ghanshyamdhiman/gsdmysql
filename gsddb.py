@@ -9,13 +9,13 @@
 #GRANT ALL ON *.* TO 'myuser'@'%';
 import mysql.connector
 
-rm_host = 'localhost'
-#rm_host = '172.17.0.1'
+#rm_host = 'localhost'
+rm_host = '172.17.0.1'
 
 mydb = mysql.connector.connect(
   host=rm_host,
-  user="root",
-  password="root123",
+  user="test",
+  password="test123",
   database="testdb1"
 )
 
