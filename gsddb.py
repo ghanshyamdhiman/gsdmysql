@@ -2,7 +2,7 @@
 import mysql.connector
 
 #rm_host = 'localhost'
-rm_host = '192.168.0.28:3306'
+rm_host = '192.168.0.28'
 
 mydb = mysql.connector.connect(
   host=rm_host,
