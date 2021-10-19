@@ -1,6 +1,7 @@
 #https://dev.mysql.com/doc/mysql-installation-excerpt/5.6/en/docker-mysql-getting-started.html
 #https://bobcares.com/blog/edit-docker-image/
 #https://www.macstadium.com/blog/how-to-k8s-pull-edit-and-push-a-docker-image
+d#ocker run -p 5432:5432 -it postgres
 import mysql.connector
 
 #rm_host = 'localhost'
