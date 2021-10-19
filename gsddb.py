@@ -3,10 +3,11 @@
 #https://www.macstadium.com/blog/how-to-k8s-pull-edit-and-push-a-docker-image
 #docker run -p 5432:5432 -it postgres
 #https://www.sqlshack.com/how-to-connect-to-remote-mysql-server-using-ssl-on-ubuntu-18-04/
+#SELECT host, user FROM mysql.user;
 import mysql.connector
 
-rm_host = '0.0.0.0'
-#rm_host = '192.168.0.28'
+#rm_host = '0.0.0.0'
+rm_host = '192.168.0.11'
 
 mydb = mysql.connector.connect(
   host=rm_host,
