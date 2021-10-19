@@ -5,8 +5,8 @@
 #https://www.sqlshack.com/how-to-connect-to-remote-mysql-server-using-ssl-on-ubuntu-18-04/
 import mysql.connector
 
-#rm_host = 'localhost'
-rm_host = '192.168.0.28'
+rm_host = 'localhost'
+#rm_host = '192.168.0.28'
 
 mydb = mysql.connector.connect(
   host=rm_host,
