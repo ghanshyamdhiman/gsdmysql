@@ -9,17 +9,20 @@
 #GRANT ALL ON *.* TO 'myuser'@'%';
 import mysql.connector
 
-#rm_host = 'localhost'
-rm_host = '172.17.0.1'
-
 mydb = mysql.connector.connect(
-  host=rm_host,
-  user="test",
-  password="test123",
-  database="testdb1"
+  host='mysql',
+  user="root",
+  password="secret",
+  database="todos"
 )
 
 mycursor = mydb.cursor()
+mycursor.execute("CREATE TABLE testtbl1(user_id VARCHAR(4), product_code VARCHAR(25))")
+mycursor.execute("INSERT INTO testtbl1 values('u-01', 'pc-001')")
+mycursor.execute("INSERT INTO testtbl1 values('u-02', 'pc-002')")
+mycursor.execute("INSERT INTO testtbl1 values('u-03', 'pc-003')")
+mycursor.execute("INSERT INTO testtbl1 values('u-04', 'pc-004')")
+
 
 mycursor.execute("SELECT * FROM testtbl1")
 
